@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrench, Settings, Shield, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import factoryImage from '@/assets/factory-ceiling.jpg';
+import factoryImage from '@/assets/afe26e56-d0c7-4a7e-8f72-ca9e76dbb7cf.JPG';
 
 const Factory = () => {
   const { t, direction } = useLanguage();
