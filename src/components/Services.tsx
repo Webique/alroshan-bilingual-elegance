@@ -100,7 +100,7 @@ const Services = () => {
               }
             </p>
             
-            <div className="flex items-center space-x-6 rtl:space-x-reverse">
+            <div className="w-full flex items-center justify-center gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-accent">100+</div>
                 <div className={`text-sm text-muted-foreground ${

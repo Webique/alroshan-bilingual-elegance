@@ -29,10 +29,22 @@ const Slogan = () => {
           </h2>
 
           {/* Main Slogan */}
-          <blockquote className={`text-hero leading-relaxed mb-8 ${
+          <blockquote className={`text-2xl md:text-3xl lg:text-4xl leading-relaxed mb-8 ${
             direction === 'rtl' ? 'font-arabic' : 'font-english'
           }`}>
-            "{t('slogan.text')}"
+            <span className="text-accent">"</span>
+            {direction === 'rtl' ? (
+              <>
+                <span className="block mb-2 font-arabic">الوقت لدينا يعني الالتزام…</span>
+                <span className="block font-arabic">وهذه هي علامتنا الفارقة</span>
+              </>
+            ) : (
+              <>
+                <span className="block mb-2">With us, time means commitment…</span>
+                <span className="block">and that is our hallmark.</span>
+              </>
+            )}
+            <span className="text-accent">"</span>
           </blockquote>
 
           {/* Decorative Line */}

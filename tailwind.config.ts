@@ -20,7 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				arabic: ['Cairo', 'Amiri', 'sans-serif'],
+				arabic: ['Cairo', 'Noto Naskh Arabic', 'Scheherazade New', 'Amiri', 'Arial Unicode MS', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
