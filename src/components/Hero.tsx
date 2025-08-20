@@ -60,7 +60,7 @@ const Hero = () => {
             </Button>
             
             <Button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => window.open('https://wa.me/966544516010', '_blank')}
               variant="outline"
               className="btn-outline-gold"
             >

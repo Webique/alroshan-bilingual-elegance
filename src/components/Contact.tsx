@@ -16,13 +16,13 @@ const Contact = () => {
       icon: Phone,
       label: direction === 'rtl' ? 'الهاتف' : 'Phone',
       value: '054 451 6010',
-      href: 'tel:+966544516010'
+      href: 'https://wa.me/966544516010'
     },
     {
       icon: Phone,
       label: direction === 'rtl' ? 'هاتف إضافي' : 'Additional Phone',
       value: '056 790 9803',
-      href: 'tel:+966567909803'
+      href: 'https://wa.me/966567909803'
     }
   ];
 
@@ -99,7 +99,7 @@ const Contact = () => {
                   }`}>
                     {info.label}
                   </div>
-                  <div className="text-muted-foreground">{info.value}</div>
+                  <div className="phone-number text-muted-foreground">{info.value}</div>
                 </div>
               </a>
             ))}

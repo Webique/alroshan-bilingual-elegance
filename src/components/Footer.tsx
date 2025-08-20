@@ -33,11 +33,6 @@ const Footer = () => {
       icon: Mail,
       href: 'mailto:Allroshan.j2@gmail.com',
       label: 'Email'
-    },
-    {
-      icon: Phone,
-      href: 'tel:+966544516010',
-      label: '054 451 6010'
     }
   ];
 
@@ -77,7 +72,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 rtl:space-x-reverse">
                 <Phone className="h-4 w-4 text-accent" />
-                <span className="text-sm">054 451 6010 | 056 790 9803</span>
+                <div className="text-sm space-x-2 rtl:space-x-reverse">
+                  <a href="https://wa.me/966544516010" target="_blank" rel="noopener noreferrer" className="phone-number hover:text-accent transition-colors duration-300">054 451 6010</a>
+                  <span>|</span>
+                  <a href="https://wa.me/966567909803" target="_blank" rel="noopener noreferrer" className="phone-number hover:text-accent transition-colors duration-300">056 790 9803</a>
+                </div>
               </div>
             </div>
           </div>
@@ -119,7 +118,7 @@ const Footer = () => {
                   href={social.href}
                   target={social.href.startsWith('http') ? '_blank' : undefined}
                   rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-center space-x-3 rtl:space-x-reverse text-primary-foreground/80 hover:text-accent transition-colors duration-300 group"
+                  className={`flex items-center space-x-3 rtl:space-x-reverse text-primary-foreground/80 hover:text-accent transition-colors duration-300 group ${social.className || ''}`}
                 >
                   <social.icon className="h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
                   <span className="text-sm">{social.label}</span>
